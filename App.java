@@ -8,7 +8,7 @@ public class App {
 	public static void main(String[] args) {
 		List<Map<String, Object>> lm = Arrays.asList(new HashMap<>() {
 			{
-				put("id", "-id3-");
+				put("id", "-id2-");
 				put("name", "name1");
 				put("age", "11");
 				put("add", "add1");
@@ -22,7 +22,7 @@ public class App {
 			}
 		}, new HashMap<>() {
 			{
-				put("id", "-id3-");
+				put("id", "-id2-");
 				put("name", "name3");
 				put("age", "13");
 				put("add", "add3");
@@ -39,6 +39,14 @@ public class App {
 				System.out.println(mapTmp + " -> " + i++);
 			}
 		}
+		
+		/*
+		 * -- <> --
+		{add=add1, name=name1, id=-id2-, age=11} -> 1
+		{add=add3, name=name3, id=-id2-, age=13} -> 2
+		-- <> --
+		{add=add2, name=name2, id=-id3-, age=12} -> 1
+		 */
 	}
 }
 
